@@ -6,14 +6,51 @@
   --secondary-bg-color: #2f303a;
   --acent-color: #2196f3;
   --radio-button-background: #f5f4fa;
+  --main-font-family: Roboto, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
-  font-family: Roboto, serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
+  font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .list {
@@ -22,29 +59,52 @@ body {
 
 /* Sections */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-activities {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+  max-width: 270px;
+  margin-bottom: 10px;
 }
 
 .text-activities {
-  font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
+  max-width: 270px;
+}
+
+.nopd {
+  padding-top: 0;
 }
 
 .section-team {
   background-color: var(--main-background-color);
+}
+
+.team-member {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .member-name {
@@ -52,6 +112,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .member-job {
@@ -59,6 +120,25 @@ body {
   line-height: 1.2;
   text-align: center;
   color: var(--second-text-color);
+}
+
+/* Hero */
+.section-hero {
+  background-color: var(--secondary-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  color: var(--third-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+  margin-bottom: 30px;
 }
 
 /*Logo */
@@ -78,7 +158,6 @@ body {
 .site-nav .link {
   color: var(--main-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -95,52 +174,10 @@ body {
 
 /*E-mails and phone numbers */
 
-.e-mail {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-.e-mail:hover,
-.e-mail:focus {
-  color: var(--acent-color);
-}
-
-.phone-number {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.phone-number:hover,
-.phone-number:focus {
-  color: var(--acent-color);
-}
-
-.header .phone-number {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
-  text-decoration: none;
-}
-.header .phone-number:hover,
-.header .phone-number:focus {
-  color: var(--acent-color);
-}
-
 .header .e-mail {
-  font-family: inherit;
+  font-family: var(--main-font-family);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   text-decoration: none;
@@ -150,9 +187,52 @@ body {
   color: var(--acent-color);
 }
 
+.header .phone-number {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  text-decoration: none;
+}
+.header .phone-number:hover,
+.header .phone-number:focus {
+  color: var(--acent-color);
+}
+
+.e-mail {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  max-width: 231px;
+  margin-bottom: 9px;
+}
+.e-mail:hover,
+.e-mail:focus {
+  color: var(--acent-color);
+}
+
+.phone-number {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  max-width: 231px;
+}
+
+.phone-number:hover,
+.phone-number:focus {
+  color: var(--acent-color);
+}
+
 /* Buttons */
 .radio-button {
-  font-family: inherit;
+  font-family: var(--main-font-family);
   background-color: var(--radio-button-background);
   border-color: var(--radio-button-background);
   font-weight: 500;
@@ -166,7 +246,7 @@ body {
   border-color: var(--acent-color);
 }
 .order-button {
-  font-family: inherit;
+  font-family: var(--main-font-family);
   background-color: var(--acent-color);
   color: var(--third-text-color);
   border-color: var(--acent-color);
@@ -176,12 +256,16 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  display: block;
+  margin: 0 auto;
 }
 
 /*Footer*/
 
 .footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -191,38 +275,40 @@ body {
 .address {
   color: var(--third-text-color);
   text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  max-width: 231px;
+  margin-bottom: 9px;
 }
 .address:hover,
 .address:focus {
   color: var(--acent-color);
 }
 
-/* Hero */
-.section-hero {
-  background-color: var(--secondary-bg-color);
-}
-
-.hero-title {
-  color: var(--third-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 /* Portfolio styles */
 
+.project-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .project-name {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  max-width: 322px;
 }
 
 .project-type {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--second-text-color);
+  max-width: 322px;
 }

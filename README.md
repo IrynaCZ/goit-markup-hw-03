@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-The third homework at course 
+# goit-markup-hw-02
+the second homework
