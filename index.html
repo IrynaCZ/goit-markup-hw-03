@@ -17,23 +17,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container h-main">
         <a href="" class="logo"> <span class="logo-accent">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li>
+            <li class="sn-links">
               <a href="" class="link current">Студія</a>
             </li>
-            <li>
+            <li class="sn-links">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li>
+            <li class="sn-links">
               <a href="" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="e-mail">info@devstudio.com</a>
-        <a href="tel:++380961111111" class="phone-number">+38 096 111 11 11</a>
+        <div class="h-contacts">
+          <a href="mailto:info@devstudio.com" class="e-mail">info@devstudio.com</a>
+          <a href="tel:++380961111111" class="phone-number">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
     <main>
@@ -45,7 +47,7 @@
       </section>
       <section class="section-activities section">
         <div class="container">
-          <ul class="list">
+          <ul class="activities-description list">
             <li>
               <h3 class="header-activities">Увага до деталей</h3>
               <p class="text-activities">
@@ -76,7 +78,7 @@
       <section class="section-actions section nopd">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="actions-description list">
             <li>
               <a href="">
                 <img src="./images/img-action-1.jpg" alt="Наше зянятие1" width="370" height="294" />
@@ -98,29 +100,29 @@
       <section class="section-team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="team list">
+            <li class="team-card">
               <img src="./images/img-person-1.jpg" alt="Сотрудник1" width="270" height="260" />
               <div class="team-member">
                 <h3 class="member-name">Ігор Дем'яненко</h3>
                 <p class="member-job">Product Designer</p>
               </div>
             </li>
-            <li>
+            <li class="team-card">
               <img src="./images/img-person-2.jpg" alt="Сотрудник2" width="270" height="260" />
               <div class="team-member">
                 <h3 class="member-name">Ольга Рєпіна</h3>
                 <p class="member-job">Frontend Developer</p>
               </div>
             </li>
-            <li>
+            <li class="team-card">
               <img src="./images/img-person-3.jpg" alt="Сотрудник3" width="270" height="260" />
               <div class="team-member">
                 <h3 class="member-name">Микола Тарасов</h3>
                 <p class="member-job">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="team-card">
               <img src="./images/img-person-4.jpg" alt="Сотрудник4" width="270" height="260" />
               <div class="team-member">
                 <h3 class="member-name">Михайло Єрмаков</h3>
@@ -134,6 +136,7 @@
     <footer class="footer">
       <div class="container">
         <a href="" class="logo"> <span class="logo-accent">Web</span>Studio</a>
+
         <address>
           <a
             href="https://goo.gl/maps/mngbNagfmVvye5gk8"
