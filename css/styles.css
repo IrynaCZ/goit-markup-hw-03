@@ -2,7 +2,7 @@
   --main-text-color: #212121;
   --second-text-color: #757575;
   --third-text-color: #ffffff;
-  --main-background-color: #f5f5f5;
+  --main-background-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
   --acent-color: #2196f3;
@@ -76,14 +76,21 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.noheader {
+  display: none;
 }
 
 .h-main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+}
+
+.our-activities {
+  width: calc((100% - 60px) / 3);
 }
 
 .activities-description {
@@ -96,6 +103,7 @@ body {
 .header-activities {
   font-weight: 700;
   line-height: 1.2;
+  font-size: 14px;
   text-transform: uppercase;
   max-width: 270px;
   margin-bottom: 10px;
@@ -133,6 +141,7 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  width: calc((100% - 90px) / 4);
 }
 
 .team-member {
@@ -190,6 +199,7 @@ body {
   line-height: 1.2;
   text-decoration: none;
   display: flex;
+  margin-right: 93px;
 }
 
 .logo-accent {
@@ -201,15 +211,7 @@ body {
 .site-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-.sn-links {
-  margin-right: 50px;
-}
-
-.sn-links:last-child {
-  margin-right: 0px;
+  column-gap: 50px;
 }
 
 .site-nav .link {
@@ -266,6 +268,7 @@ body {
 
 .h-contacts {
   display: flex;
+  margin-left: auto;
 }
 
 .header .e-mail {
@@ -299,15 +302,8 @@ body {
 .buttons-selection {
   display: flex;
   justify-content: center;
-}
-
-.r-b {
-  margin-right: 8px;
   margin-bottom: 50px;
-}
-
-.r-b:last-child {
-  margin-right: 0px;
+  column-gap: 8px;
 }
 
 .radio-button {
@@ -318,6 +314,8 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .radio-button:hover,
@@ -339,6 +337,7 @@ body {
   letter-spacing: 0.06em;
   display: block;
   margin: 0 auto;
+  padding: 10px 32px;
 }
 
 /*Footer*/
@@ -382,21 +381,19 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project-review {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
 }
 
 .project-card {
   width: 370px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 20px 24px;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
 }
